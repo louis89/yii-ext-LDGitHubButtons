@@ -1,4 +1,13 @@
 <?php
+/**
+ * LDGitHubForkButton class file.
+ *
+ * @author Louis A. DaPrato <l.daprato@gmail.com>
+ * @link https://lou-d.com
+ * @copyright 2014 Louis A. DaPrato
+ * @license The MIT License (MIT)
+ * @since 1.0
+ */
 
 require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'LDGitHubButtonBase.php');
 
