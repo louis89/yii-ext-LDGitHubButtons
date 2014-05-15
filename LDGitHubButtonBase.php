@@ -2,7 +2,7 @@
 
 /**
  * 
- * @author Louis DaPrato <l.daprato@gmail.com>
+ * @author Louis A. DaPrato <l.daprato@gmail.com>
  *
  */
 abstract class LDGitHubButtonBase extends CWidget
