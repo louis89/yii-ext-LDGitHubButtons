@@ -4,10 +4,16 @@ based on [unofficial GitHub buttons](https://github.com/mdo/github-buttons)
 
 Unlike the original unofficial GitHub buttons this widget has no third party dependencies. These buttons do not rely on the use of iframes hosted by [ghbtns](http://ghbtns.com/). All necesssary components are packaged into this widget and will be served solely by your site. These buttons are also multilungual and more customizable.
 
+REQUIREMENTS
+------------
+
+- Yii 1.0 or above
+- LDPublishAssetsBehavior
+
 INSTALLATION
 ------------
 
-Simply clone this repository or add it as a submodule into your Yii application's extensions subdirectory.
+Simply unzip, clone, or add this repository as a submodule into your Yii application's extensions subdirectory.
 
 QUICK START
 -----------
@@ -19,12 +25,12 @@ It is assumed "$this" refers to an instance of CBaseController and "ext" is the 
 
 ## Follow
 
-	$this->widget('ext.LDBitbucketButtons.LDBitbucketFollowButton', array('user' => 'username'));
+	$this->widget('ext.LDGitHubButtons.LDGitHubFollowButton', array('user' => 'username'));
 
 ## Watch
 
-	$this->widget('ext.LDBitbucketButtons.LDBitbucketWatchButton', array('user' => 'username', 'repo' => 'repositoryname'));
+	$this->widget('ext.LDGitHubButtons.LDGitHubWatchButton', array('user' => 'username', 'repo' => 'repositoryname'));
 
 ## Fork
 
-	$this->widget('ext.LDBitbucketButtons.LDBitbucketForkButton', array('user' => 'username', 'repo' => 'repositoryname'));
+	$this->widget('ext.LDGitHubButtons.LDGitHubForkButton', array('user' => 'username', 'repo' => 'repositoryname'));
