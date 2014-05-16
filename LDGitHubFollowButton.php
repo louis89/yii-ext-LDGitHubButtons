@@ -12,6 +12,7 @@
 require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'LDGitHubButtonBase.php');
 
 /**
+ * GitHub Follow button
  * 
  * @author Louis A. DaPrato <l.daprato@gmail.com>
  *
@@ -36,21 +37,37 @@ class LDGitHubFollowButton extends LDGitHubButtonBase
 		}
 	}
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see LDGitHubButtonBase::getButtonUrl()
+	 */
 	public function getButtonUrl()
 	{
 		return self::buildUrl($this->user);
 	}
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see LDGitHubButtonBase::getCounterUrl()
+	 */
 	public function getCounterUrl()
 	{
 		return self::buildUrl($this->user, 'followers');
 	}
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see LDGitHubButtonBase::getApiUrl()
+	 */
 	public function getApiUrl()
 	{
 		return self::buildApiUrl('users', $this->user);
 	}
 
+	/**
+	 * (non-PHPdoc)
+	 * @see LDGitHubButtonBase::getDataPropName()
+	 */
 	public function getDataPropName()
 	{
 		return 'followers';

@@ -10,6 +10,7 @@
  */
 
 /**
+ * Base class for GitHub buttons based on the "unofficial GitHub buttons" {@link https://github.com/mdo/github-buttons}
  * 
  * @author Louis A. DaPrato <l.daprato@gmail.com>
  *

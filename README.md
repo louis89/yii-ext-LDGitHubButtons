@@ -1,6 +1,6 @@
 GitHub buttons for Yii
 =============================
-based on [unofficial GitHub buttons](https://github.com/mdo/github-buttons) by @mdo
+based on [unofficial GitHub buttons](https://github.com/mdo/github-buttons)
 
 Unlike the original unofficial GitHub buttons this widget has no third party dependencies. These buttons do not rely on the use of iframes hosted by [ghbtns](http://ghbtns.com/). All necesssary components are packaged into this widget and will be served solely by your site. These buttons are also multilungual and more customizable.
 

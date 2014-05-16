@@ -12,6 +12,7 @@
 require_once(dirname(__FILE__).DIRECTORY_SEPARATOR.'LDGitHubButtonBase.php');
 
 /**
+ * GitHub Fork button
  * 
  * @author Louis A. DaPrato <l.daprato@gmail.com>
  *
@@ -45,21 +46,37 @@ class LDGitHubForkButton extends LDGitHubButtonBase
 		}
 	}
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see LDGitHubButtonBase::getButtonUrl()
+	 */
 	public function getButtonUrl()
 	{
 		return self::buildUrl($this->user, $this->repo);
 	}
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see LDGitHubButtonBase::getCounterUrl()
+	 */
 	public function getCounterUrl()
 	{
 		return self::buildUrl($this->user, $this->repo, 'network');
 	}
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see LDGitHubButtonBase::getApiUrl()
+	 */
 	public function getApiUrl()
 	{
 		return self::buildApiUrl('repos', $this->user, $this->repo);
 	}
 	
+	/**
+	 * (non-PHPdoc)
+	 * @see LDGitHubButtonBase::getDataPropName()
+	 */
 	public function getDataPropName()
 	{
 		return 'forks';
